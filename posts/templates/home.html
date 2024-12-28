@@ -1,0 +1,18 @@
+<center>
+    <h1 style="
+        color: rgb(0, 137, 137);
+        font-size: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 50px;
+        text-decoration:underline;
+">My Posts</h1>
+</center>
+
+
+<ul>
+    {% for post in post_list %}
+    <li>{{ post.title }}  =><a href="more" style="color: rgb(0, 137, 137);">  see more</a></li>
+    <br>
+    <br>
+    {% endfor %}
+</ul>
